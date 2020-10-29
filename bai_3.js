@@ -1,17 +1,24 @@
-let str = "dhqiowdoasncaoiqqweoiaisd";
+let str = ["n", "a", "o", "n", "m"];
 let vowel = [];
 
-function countVowel(str) {
 
+function checkVowel(str) {
+    let vowelA = ["u", "e", "o", "a", "i"];
     for (let i = 0; i < str.length; i++) {
-
-        let val = str[i] === "u" ||  str[i] === "e" || str[i] === "o" || str[i] === "a" || str[i] === "i";
-
-        if(val){
-            vowel.push(str[i]);
+        for (let j = 0; j < vowelA.length; j++) {
+            if (str[i] === vowelA[j]) {
+                vowel.push(str[i]);
+            }
         }
     }
-    console.log(`Count vowel: ${vowel.length}`);
 }
 
-countVowel(str);
+function show() {
+    let boolean = checkVowel(str);
+
+        console.log(`Count vowel: ${vowel.length}`);
+
+
+}
+
+show();
