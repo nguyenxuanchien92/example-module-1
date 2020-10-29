@@ -23,9 +23,13 @@ class Animal {
 
 let objAnimal1 = new Animal("Elephant", 45.6);
 let objAnimal2 = new Animal("chicken", 2);
-let myAnimal1 = JSON.stringify(objAnimal1);
 
 objAnimal2.name = "Mouse";
 
-console.log(myAnimal1.toString());
-console.log(`objAnimal2 after rename: ${objAnimal2.name}`);
+function show(){
+    let myAnimal1 = JSON.stringify(objAnimal1);
+    console.log(`Switch an object (objAnimal1) from a string ${myAnimal1}`);
+    console.log(`Object objAnimal2 after rename: ${objAnimal2.name}`);
+}
+
+show();
