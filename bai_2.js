@@ -12,11 +12,11 @@ function checkIndex(arr, num) {
 function show(arr, num) {
     let boolean = checkIndex(arr, num);
     if (boolean) {
-        let result = arr.indexOf(arr[num]);
-        console.log(result);
+        let result = arr.indexOf(num);
+        console.log(`index: ${result}`);
     } else {
         console.log("Không có kết quả !");
     }
 }
 
-show(arr, 7);
+show(arr, 5);
