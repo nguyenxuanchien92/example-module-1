@@ -1,7 +1,7 @@
 let arr = [1, 2, 3, 4, 5, 6, 7];
 
 function checkIndex(arr, num) {
-    let val = arr.indexOf(arr[num]);
+    let val = arr.indexOf(num);
     if (val !== -1) {
         return true;
     } else {
